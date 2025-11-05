@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixas: primeiros passos</title>
+    <style>
+       img{
+           width: 500px;
+       }
+
+       main{
+            text-align: center;
+            box-shadow: 1px 1px 15px black;
+            width: 600px;
+            padding: 10px;
+            margin: auto;
+       }
+       h1#box-level{
+
+            /*shorthand (Sem em sentido horário)
+            margin: 20px 30px 20px 40px;*/
+            margin: auto;
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+
+            /* shorthand 
+            border: 10px solid darkslategrey;*/
+            border-width: 10px;
+            border-style: solid;
+            border-color: darkslategrey;
+
+            /*shorthand(se todos os lados tiverem o mesmo tamanho ) 
+            padding: 10px;
+            (se todos os lados não tiverem o mesmo tamanho)
+            padding: 10px 11px 10px 10px;*/
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-left: 10px;
+            padding-bottom: 10px;
+
+            /*shorthand
+            outline-width: 5xp groove blueviolet;*/
+            outline-width: 3px;
+            outline-style: groove;
+            outline-color: blueviolet;
+
+            /*
+            display: block;
+            display: inline; */
+
+       }
+
+       p{
+            text-align: center;
+       }
+
+       a{
+            
+            border-width: 2px;
+            border-style: solid;
+            border-color: red;
+
+            /*Fica da borda para dentro */
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-left: 10px;
+            padding-bottom: 10px;
+
+       }
+
+
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Modelo de caixas: primeiros passos</h1>
+        <img src="imagens/tipos de caixas.png" alt="">
+        <h1 id="box-level">Exemplo de caixa box-level</h1>
+    <p>Criando uma caixa de link de exemplo <a href="https://www.google.com">Buscador Google</a></p>
+    </main>
+    
+</body>
+</html>
