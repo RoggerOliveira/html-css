@@ -12,11 +12,27 @@
         table{
             width: 400px;
             border-collapse: collapse;
+            position: relative; /*Cabeçalho fixo*/
+        }
+
+        thead > tr > th{ /*Cabeçalho fixo*/
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+
         }
 
         td, th{
             border: 1px solid black;
             padding: 10px;
+        }
+
+        tbody > tr:nth-child(odd){ /* 2n-1 */
+            background-color: white;
+        }
+
+        tbody > tr:nth-child(even){ /* 2n */
+            background-color: lightgray;
         }
 
         thead, tfoot{
@@ -26,6 +42,15 @@
         .numero{
             text-align: right;
         }
+
+        caption{
+            background-color: black;
+            color: white;
+            width: 400px;
+            padding-top: 25px;
+            padding-bottom: 25px;
+            font-size: 22px;
+        }
     </style>
 </head>
 <body>
@@ -33,18 +58,22 @@
     <!--
         Anatomia para Tabelas Grandes
         Table
+            Caption = legenda da tabela
             THead
                 tr, td, th
             TBody
                 tr, td, th
             TFoot
                 tr, td, th    
+        
+        Scope = é para facilitar a busca dos navegadores aos dados dentro do site.        
     -->        
     <table>
+        <caption>População dos Estados Brasileiros</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 89px;">População</th>
             </tr>
         </thead>
 
@@ -161,7 +190,7 @@
 
         <tfoot>
             <tr>
-                <th>Total </th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="numero"><strong>213 421 037</strong></td>
             </tr>
         </tfoot>
