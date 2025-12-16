@@ -4,12 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flexbox</title>
+    <style>
+        .conteiner{
+            display: flex;
+            background-color: cornflowerblue;
+            border: 1px solid black;
+            flex-flow: row nowrap;
+        }
+
+        .item{
+            background-color: aquamarine;
+            flex-basis: 180px;
+            border: 1px solid black;
+            text-align: center;
+            flex-shrink: 1; /*0 = não comprimir*/
+            flex-grow: 1; /*0 = não expandir*/
+        }
+    </style>
 </head>
 <body>
     <div class="conteiner">
         <div class="item">A</div>
-        <div class="item">A</div>
-        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
     </div>
 </body>
 </html>
