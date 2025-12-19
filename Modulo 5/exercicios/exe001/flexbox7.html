@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .pai{
+            display: flex;
+            flex-flow: row nowrap;
+            background-color: aqua;
+            border: 1px solid black;
+        }
+
+        .filho{
+            text-align: center;
+            border: 1px solid black;
+        }
+
+        #cxA{
+            flex: 1 1 200px;
+        }
+
+        #cxB{
+            flex: 0 1 200px;
+        }
+
+        #cxC{
+            flex: 1 0 100px;
+        }
+
+        img{
+            display: block;
+            width: 450px;
+            margin: auto; 
+        }
+
+        div p{
+            text-align: center;
+            margin-top: 50px;
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    <div class="pai">
+        <div class="filho" id="cxA">1</div>
+        <div class="filho" id="cxB">2</div>
+        <div class="filho" id="cxC">3</div>
+        
+    </div>
+    <div>
+        <p>Propriedades do flex</p>
+        <img src="imagens/propriedade do flex.png" alt="propriedade do flex">
+    </div>
+</body>
+</html>
