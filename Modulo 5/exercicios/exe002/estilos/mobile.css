@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 512px) {
+    header{
+        display: block;
+        padding-bottom: 4px;
+    }
+    
+    header > h1{
+        text-align: center;
+        padding: 5px;
+    }
+
+    header > section > a{
+        display: block;
+        text-align: center;
+        margin-top: 5px;
+        margin-left: 2px;
+    }
+
+    main > section{
+        margin-top: 15px;
+    }
+}
