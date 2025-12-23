@@ -3,48 +3,65 @@
 * {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 body, html{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
+    line-height: 1.4em;
 }
 
-header{
-    margin-top: 10px;
+p {
+    padding: 10px;
+    text-align: justify;
 }
 
-main > section.pai{
-    border: 3px dashed red;
+h1, h2{
+    text-align: left;
+    padding: 10px;
+    line-height: 1.2em;
+}
+
+.pai{
     background-color: #D7EEFE;
+    width: 100%;
 }
 
-article.imagem-texto{
-    border: 5px solid green ;
-    display: flex;
+.texto{
+    flex: 1 1 400px;
+}
+
+.imagem-texto{
+    display: flex; 
+    flex-flow: row wrap-reverse; 
     justify-content: space-between;
-    flex-flow: row wrap-reverse;
-    align-items: center;
 }
 
-div.texto{
-    width: 50%;
-}
-
-article.texto-video{
-    border: 4px solid blue;
+.texto-video{
     display: flex;
-    justify-content: space-between;
     flex-flow: row wrap;
-    align-items: center;
+    justify-content: space-between;
 }
 
-div.texto{
-    width: 800px;
+.midia{
+    flex: 1 0 400px;
 }
 
-div.video{
-    display: flex;
-    align-items: flex-end;
-    
+.midia > img{
+    display: block;
+    margin: auto;
+    aspect-ratio: 16 / 9;
+    height: 95%;
+    width: 90%;
 }
+
+.midia > iframe{
+    display: block;
+    margin: auto;
+    aspect-ratio: 16 / 9;
+    height: 95%;
+    width: 90%;
+}
+
+
