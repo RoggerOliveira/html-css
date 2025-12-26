@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 657px) {
+    header{
+
+        justify-content: space-between;
+    }
+
+    .menuA{
+        padding-bottom: 0px;
+    }
+    .menuB{
+        padding-top: 1px;
+    }
+
+    .menuA > a, .menuB > a{
+        display: block;
+        flex: 1 1 auto;
+        margin-bottom: 2px;
+        width: 96vw;
+    }
+
+    
+}
